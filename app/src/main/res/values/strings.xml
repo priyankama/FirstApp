@@ -2,5 +2,6 @@
     <string name="app_name">FirstApp</string>
     <string name="wel">Image</string>
     <string name="logo">Image</string>
+    <string name="part">Image</string>
     <string name="text1">TextView</string>
 </resources>
