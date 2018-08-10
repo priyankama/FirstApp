@@ -11,7 +11,6 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-
         getstartedbtn.setOnClickListener {
             val partitionintent = Intent(this,PartitionActivity::class.java)
             startActivity(partitionintent)
