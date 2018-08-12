@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.PartitionActivity">
+    tools:context=".Controller.SkillActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/part"
+        android:contentDescription="@string/skill"
         android:scaleType="centerCrop"
-        android:src="@drawable/part"
+        android:src="@drawable/skill"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -33,92 +35,80 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/desired_combos"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="24dp"
+        android:text="@string/i_am_a"
         android:textColor="#ffffff"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <LinearLayout
-        android:layout_width="361dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ToggleButton
-            android:id="@+id/mensbtn"
+            android:id="@+id/teenagerbtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
-            android:onClick="mensbtnclicked"
+            android:onClick="teenagerbtnclicked"
             android:padding="10dp"
-            android:text="@string/mens1"
+            android:text="@string/teenager1"
             android:textColor="#ffffff"
-            android:textOff="@string/mens2"
-            android:textOn="@string/mens3"
+            android:textOff="@string/teenager2"
+            android:textOn="@string/teenager3"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="187dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <ToggleButton
-            android:id="@+id/womenbtn"
+            android:id="@+id/adultbtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
-            android:onClick="womenbtnclicked"
+            android:onClick="adultbtnclicked"
             android:padding="10dp"
-            android:text="@string/women1"
+            android:text="@string/adult1"
             android:textColor="#ffffff"
-            android:textOff="@string/women2"
-            android:textOn="@string/women3"
+            android:textOff="@string/adult2"
+            android:textOn="@string/adult3"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="106dp"
-            tools:layout_editor_absoluteY="224dp" />
-
-        <ToggleButton
-            android:id="@+id/kidsbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/swoosh_toggle"
-            android:onClick="kidsbtnclicked"
-            android:padding="10dp"
-            android:text="@string/kids1"
-            android:textColor="#ffffff"
-            android:textOff="@string/kids2"
-            android:textOn="@string/kids3"
-            android:textSize="18sp" />
-
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/finishbtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
-        android:onClick="nextClicked"
-        android:text="@string/next"
+        android:fontFamily="monospace"
+        android:onClick="finishbtnclicked"
+        android:text="@string/finish"
         android:textColor="#ffffff"
-        android:textSize="30sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </android.support.constraint.ConstraintLayout>
