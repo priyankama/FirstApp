@@ -1,4 +1,3 @@
 package com.example.bandhan.firstapp.Utilities
 
-const val EXTRA_SELECTION="select"
-const val EXTRA_GRP="group"
+ const val EXTRA_PEOPLE="people"
